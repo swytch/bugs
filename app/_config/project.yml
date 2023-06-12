@@ -1,0 +1,18 @@
+---
+Name: bugs-elemental
+---
+Page:
+  field_include:
+    - ElementalAreaID
+  allowed_elements:
+    - Bugs\Elemental\ElementTag
+    - Bugs\Elemental\ElementImage
+    - Bugs\Elemental\ElementNested
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+
+DNADesign\Elemental\Models\BaseElement:
+  default_global_elements: false
+  displays_title_in_template: false
+  extensions:
+    - Bugs\Extensions\BaseElementCMSEditLinkExtension

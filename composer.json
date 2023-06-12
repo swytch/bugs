@@ -1,0 +1,36 @@
+{
+    "name": "bugs/bugs",
+    "description": "Website",
+    "type": "silverstripe-project",
+    "require": {
+        "silverstripe/tagfield": "^3.0",
+        "silverstripe/recipe-cms": "^5",
+        "dnadesign/silverstripe-elemental": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/code/"
+        }
+    },
+    "extra": {
+        "resources-dir": "_static",
+        "project-files-installed": [
+            ".htaccess",
+            "app/.htaccess",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ]
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "config": {
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true,
+            "silverstripe/recipe-plugin": true
+        }
+    }
+}
